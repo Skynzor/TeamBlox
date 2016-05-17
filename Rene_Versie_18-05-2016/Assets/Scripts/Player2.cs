@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Player2 : MonoBehaviour {
 
-    private Player2 playerOne;
-
     //Bepaal de maximum snelheid, snelheid en jumppower van de player
     public float maxSpeed = 20;
     public float speed = 200f;
