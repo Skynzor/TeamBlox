@@ -1,0 +1,7 @@
+5.3.4f1:2.2.0.0
+WSAPlayer
+D:\Software\Unity 5.3.4f1\Editor\Data\PlaybackEngines\MetroSupport/Tools/UnityEngine.dll
+D:/Software/Unity 5.3.4f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+D:/Software/Unity 5.3.4f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+D:/Software/Unity 5.3.4f1/Editor/Data/Managed/UnityEditor.dll
+D:/Software/Unity 5.3.4f1/Editor/Data\Managed/Mono.Cecil.dll
