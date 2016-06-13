@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INF2J_9_Juni_2016_brokenPlatform.CSharp", "INF2J_9_Juni_2016_brokenPlatform.CSharp.csproj", "{BBD7EA86-4A33-CDF5-BD76-09DE38A3A42A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBD7EA86-4A33-CDF5-BD76-09DE38A3A42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD7EA86-4A33-CDF5-BD76-09DE38A3A42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD7EA86-4A33-CDF5-BD76-09DE38A3A42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD7EA86-4A33-CDF5-BD76-09DE38A3A42A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
