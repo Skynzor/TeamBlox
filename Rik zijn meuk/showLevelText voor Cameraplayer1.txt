@@ -1,0 +1,25 @@
+    public void showLevelText()
+    {
+        Text levelText = GameObject.Find("levelText").GetComponent<Text>();
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        string text;
+        switch (sceneIndex)
+        {
+            case 1:
+                text = "Level 1";
+                break;
+            case 5:
+                text = "Level 2";
+                break;
+            case 6:
+                text = "Level 3";
+                break;
+            default:
+                text = "";
+                break;
+        }
+        levelText.text = text;
+        levelText.CrossFadeAlpha(0f, 3.5f, false);
+    }
+
+!! oproepen in start()
