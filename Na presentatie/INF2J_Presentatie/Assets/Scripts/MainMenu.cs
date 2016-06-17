@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour {
     /**********************************************************************/
     public void Play()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //load levelselect scene
@@ -39,7 +39,7 @@ public class MainMenu : MonoBehaviour {
     /**********************************************************************/
     public void HighScore()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //load highscore scene
@@ -52,7 +52,7 @@ public class MainMenu : MonoBehaviour {
     /**********************************************************************/
     public void Options()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //load options scene
@@ -65,7 +65,7 @@ public class MainMenu : MonoBehaviour {
     /**********************************************************************/
     public void Exit()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
         
         //Sluit app

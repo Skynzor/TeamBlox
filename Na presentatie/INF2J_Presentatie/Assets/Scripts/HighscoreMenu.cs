@@ -53,7 +53,7 @@ public class HighscoreMenu : MonoBehaviour
     // Terug naar hoofdmenu
     public void Back()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
         
         //terug naar hoofdmenu scene

@@ -66,6 +66,7 @@ public class hitFinishLine_Level_2 : MonoBehaviour {
 
     IEnumerator LoadAfterDelay(int levelIndex)
     {
+		//Play Victory Sound
         SoundManager.soundInstance.RandomizeSfx(victorySound1, victorySound2);
         yield return new WaitForSeconds(06); // wacht 6 seconden
         //Application.LoadLevel(6); // Level 3

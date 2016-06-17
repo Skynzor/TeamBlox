@@ -59,7 +59,7 @@ public class PauseMenu : MonoBehaviour
         //ga verder
         paused = false;
 
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
     }
 
@@ -68,7 +68,7 @@ public class PauseMenu : MonoBehaviour
     /**********************************************************************/
     public void Restart()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //reload het level
@@ -82,7 +82,7 @@ public class PauseMenu : MonoBehaviour
     /**********************************************************************/
     public void MainMenu()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
         
         //level index is nu 0. Dit betekend dat de Scene met index 0 geladen wordt.
@@ -95,7 +95,7 @@ public class PauseMenu : MonoBehaviour
     /**********************************************************************/
     public void Quit()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //sluit applicatie af

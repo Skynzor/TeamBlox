@@ -79,6 +79,7 @@ public class Player1 : MonoBehaviour {
             {
                 rb2d.AddForce(Vector3.up * jumpPower);
                 //Debug.Log("W ingedrukt");
+				//Play Jump Sound
                 SoundManager.soundInstance.RandomizeSfx(jumpSound1, jumpSound2);
 
             }
@@ -136,12 +137,14 @@ public class Player1 : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Lava")
         {
+			//Play Death Sound
             SoundManager.soundInstance.RandomizeSfx(deathSound1, deathSound2);
             Destroy(gameObject);
             Application.LoadLevel(Application.loadedLevel);
         }
         if (coll.gameObject.tag == "Enemy")
         {
+			//Play Death Sound
             SoundManager.soundInstance.RandomizeSfx(deathSound1, deathSound2);
             GameObject playerTag = GameObject.FindGameObjectWithTag("Player");
             Destroy(playerTag);

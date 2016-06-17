@@ -74,6 +74,7 @@ public class hitFinishLine : MonoBehaviour {
     //Hier wordt een victory geluid afgespeeld op de actieve level (index).
     IEnumerator LoadAfterDelay(int levelIndex)
     {
+		//Play Victory Sound
         SoundManager.soundInstance.RandomizeSfx(victorySound1, victorySound2);
         yield return new WaitForSeconds(06); // wacht 6 seconden
         SceneManager.LoadScene(5); // level 2

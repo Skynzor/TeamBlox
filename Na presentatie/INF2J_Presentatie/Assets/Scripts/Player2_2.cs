@@ -75,6 +75,7 @@ public class Player2_2 : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb2d.AddForce(Vector3.up * jumpPower);
+				//Play Jump Sound
                 SoundManager.soundInstance.RandomizeSfx(jumpSound1, jumpSound2);
             }
         }
@@ -130,6 +131,7 @@ public class Player2_2 : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Lava")
         {
+			//Play Death Sound
             SoundManager.soundInstance.RandomizeSfx(deathSound1, deathSound2);
             Destroy(gameObject);
             //Application.LoadLevel(Application.loadedLevel);
@@ -138,6 +140,7 @@ public class Player2_2 : MonoBehaviour {
         }
         if (coll.gameObject.tag == "Enemy")
         {
+			//Play Death Sound
             SoundManager.soundInstance.RandomizeSfx(deathSound1, deathSound2);
             GameObject playerTag = GameObject.FindGameObjectWithTag("Player");
             Destroy(playerTag);
