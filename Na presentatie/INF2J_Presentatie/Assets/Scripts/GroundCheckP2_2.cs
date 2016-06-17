@@ -3,6 +3,9 @@ using System.Collections;
 
 public class GroundCheckP2_2 : MonoBehaviour {
 
+    //Om het makkelijker te maken met nakijken bekijk de GroundCheck class.
+    //Hierin wordt hetzelfde behandelt.
+
     private Player2_2 player2;
 
     void Start()

@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class hitFinishLine_Level_2 : MonoBehaviour {
 
+    //In de class hitFinishLine staat alles uitgelegd.
+    //Gelieve daarna te kijken voor comments.
+
     //Sound effects
     public AudioClip victorySound1;
     public AudioClip victorySound2;

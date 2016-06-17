@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Enemy2 : MonoBehaviour {
 
+    //Om het makkelijker te maken met nakijken bekijk de Enemy class.
+    //Hierin wordt hetzelfde behandelt.
+
     public float speed = 50f;
 
     public float velocity = 10f;

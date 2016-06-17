@@ -5,23 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class hitFinishLine : MonoBehaviour {
 
-    //Sound effects
+    //Dit is de finishline class.
+    //Dit hebben wij gemaakt omdat wij erachter kwamen dat wij nog geen finish hadden per level en dus ook geen transitie.
+
+        //Geluidseffecten
     public AudioClip victorySound1;
     public AudioClip victorySound2;
 
+        //Beide spelers worden op False gezet omdat ze niet in de finish staan.
     bool player1Arrived = false;
     bool player2Arrived = false;
 
+        //De levelcomplete variabele
     public Text levelComplete;
 
     private bool paused = false;
 
     void Start()
     {
+        //Hierin wordt de LevelComplete text aangeroepen binnen de canvas.
         levelComplete = GameObject.Find("Canvas/LevelComplete").GetComponent<Text>();  
         levelComplete.text = "";
     }
 
+        //Hier wordt er gekeken wanneer een speler een collision heeft met de finish (of beter gezegd, in de finish staat) zal dit een status wijzigen van False naar True.
+        //Hier wordt er afgedwongen dat beide spelers tegelijk in op of in de finish moeten staan doormiddel van een TRUE / FALSE status.
     void OnTriggerEnter2D(Collider2D coll)
     {
         GameObject hitObj = coll.gameObject;
@@ -44,6 +52,8 @@ public class hitFinishLine : MonoBehaviour {
         }
     }
 
+        //Hier wordt er gezegt dat als een speler geen collision meer heeft met de finish, geef dan een debug weer in de console dat een speler wegloopt.
+        //Dit is niet te zien in de game, maar alleen te zien voor de developers.
     void OnTriggerExit2D(Collider2D coll)
     {
         GameObject hitObj = coll.gameObject;
@@ -61,11 +71,11 @@ public class hitFinishLine : MonoBehaviour {
         }
     }
 
+    //Hier wordt een victory geluid afgespeeld op de actieve level (index).
     IEnumerator LoadAfterDelay(int levelIndex)
     {
         SoundManager.soundInstance.RandomizeSfx(victorySound1, victorySound2);
         yield return new WaitForSeconds(06); // wacht 6 seconden
-        //Application.LoadLevel(5); // Level 2
         SceneManager.LoadScene(5); // level 2
 
     }
