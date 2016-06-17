@@ -30,7 +30,7 @@ public class LevelSelectMenu : MonoBehaviour
     // Terug naar hoofdmenu
     public void Back()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //terug naar hoofdmenu scene
@@ -44,7 +44,7 @@ public class LevelSelectMenu : MonoBehaviour
     //start level 1
     public void PlayLevelOne()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //load level 1
@@ -65,7 +65,7 @@ public class LevelSelectMenu : MonoBehaviour
     //start level 2
     public void PlayLevelTwo()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
 
         //load level 2
@@ -83,7 +83,7 @@ public class LevelSelectMenu : MonoBehaviour
     //start level 3
     public void PlayLevelThree()
     {
-        //
+        //Play Button Sound
         SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
         
         //load level 3

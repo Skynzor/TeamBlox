@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class OptionsMenu : MonoBehaviour
 {
+
+	/******************************SOUND***********************************/
+    //Sound effects
+    public AudioClip buttonSound1;
+    public AudioClip buttonSound2;
+
     /******************************DROPDOWN********************************/
     Dropdown dropdown;
     int selectedindex;
@@ -61,6 +67,9 @@ public class OptionsMenu : MonoBehaviour
     //Terugknop naar hoofdmenu
     public void Back()
     {
+		//Play Button Sound
+        SoundManager.soundInstance.RandomizeSfx(buttonSound1, buttonSound2);
+		
         //terug naar hoofdmenu scene
         //Application.LoadLevel(0);
         SceneManager.LoadScene(0);
